@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  become: yes
+
+  tasks:
+          - name: Print hostnames of all hosts i inventory
+            debug: 
+                msg: "{{ ansible_hostname }}"
